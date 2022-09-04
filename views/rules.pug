@@ -1,0 +1,9 @@
+extends components/layout.pug
+
+block content
+  section.section
+    .container
+      h1.title Rules
+      p.subtitle These are the rules you agree to abide by
+      //- .content!= markdown.rules
+      iframe.is-fullwidth(src="https://docs.google.com/document/d/e/2PACX-1vTDwYqqolNKqoHESHV1L3thcQr340zRlNQ-MO6q8Hz3jGOawaSTCoKg5rAvgHbheJ6TmYznW4_igb2B/pub?embedded=true" style="display:block;margin-left:auto;margin-right:auto;width:100%;max-width:832px;" height="8400px")

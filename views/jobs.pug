@@ -1,0 +1,19 @@
+extends components/layout.pug
+
+block content
+  section.section
+    .container
+      h1.title Explore the jobs
+      p.subtitle These are the jobs we have to offer
+      .columns.is-multiline
+        each job in jobs
+          .column.is-one-third
+            .card
+              .card-image
+                figure.image.is-4by3
+                  img(src=job.img)
+              .card-content
+                .content
+                  a.button.is-pulled-right.is-link(href=job.href target="_blank") Apply
+                  p.title= job.title
+                  p= job.description
